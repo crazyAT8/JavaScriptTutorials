@@ -99,8 +99,16 @@
         function printUser(user) {
             console.log(`Name is: ${user.name}. Age is ${user.age}`)
         }
+        // OR
+        function printUser2({ name, age }) {
+            console.log(`Name is: ${name}. Age is ${age}`)
+        }
+        function printUser3({ name, age, favoriteFood = 'Watermelon' }) {
+            console.log(`Name is: ${name}. Age is ${age}. Food is ${favoriteFood}`)
+        }
 
         printUser(personThree);
+        printUser2(personThree);
 
     </script>
 </body>
